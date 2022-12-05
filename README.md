@@ -1,10 +1,6 @@
 # OWL Javascript Project Starter
 
-This repo is an example on how to start a real project with the Odoo OWL framework.
-
-Thanks to @SimonGenin for it's [original Starter Project for OWL](https://github.com/SimonGenin/OWL-JavaScript-Project-Starter)
-
-[![Deploy on Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/Coding-Dodo/OWL-JavaScript-Project-Starter)
+This repo is a simple example of single page designs using OWL.
 
 ## Features
 
@@ -47,31 +43,3 @@ Run tests
 ```bash
 npm run test
 ```
-
-## Components
-
-It is expected to create components in one file, following this convention:
-
-```js
-import { Component, useState, tags } from "@odoo/owl";
-
-const APP_TEMPLATE = tags.xml/*xml*/ `
-<div t-name="App" class="" t-on-click="update">
-  Hello <t t-esc="state.text"/>
-</div>
-`;
-
-export class App extends Component {
-  static template = APP_TEMPLATE;
-  state = useState({ text: "Owl" });
-  update() {
-    this.state.text = this.state.text === "Owl" ? "World" : "Owl";
-  }
-}
-```
-
-## See also
-
-If your are searching for the a project starter with Tailwind and PostCSS:
-
-[https://github.com/Coding-Dodo/OWL-JavaScript-Tailwind-Project-Starter](https://github.com/Coding-Dodo/OWL-JavaScript-Tailwind-Project-Starter)
