@@ -31,15 +31,3 @@ Dev with livereload:
 ```bash
 npm run dev
 ```
-
-Production build
-
-```bash
-npm run build
-```
-
-Run tests
-
-```bash
-npm run test
-```
